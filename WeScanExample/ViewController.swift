@@ -36,10 +36,6 @@ class ViewController: UIViewController, ImageScannerControllerDelegate {
         scanner.dismiss(animated: true)
     }
     
-    func imageScannerControllerDidFinish(_ scanner: ImageScannerController) {
-        scanner.dis
-    }
-    
     func imageScannerControllerDidCancel(_ scanner: ImageScannerController) {
         // The user tapped 'Cancel' on the scanner
         // You are responsible for dismissing the ImageScannerController
