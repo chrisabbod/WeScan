@@ -1,0 +1,6 @@
+framework module Pods_WeScanExampleTests {
+  umbrella header "Pods-WeScanExampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
