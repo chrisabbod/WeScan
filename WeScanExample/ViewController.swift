@@ -33,7 +33,41 @@ class ViewController: UIViewController, ImageScannerControllerDelegate {
     func imageScannerController(_ scanner: ImageScannerController, didFinishScanningWithResults results: ImageScannerResults) {
         // The user successfully scanned an image, which is available in the ImageScannerResults
         // You are responsible for dismissing the ImageScannerController
+        
+        //create image url
+        let imageName: String = "scannedImage"
+        let imagePath: String = "\(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0])/\(imageName).png"
+        let imageUrl: URL = URL(fileURLWithPath: imagePath)
+        
+        //store image url
+        let newImage: UIImage = results.scannedImage // create your UIImage here
+        try? newImage.pngData()?.write(to: imageUrl)
+        
+        loadImage(name: imageName)
+        
+        //documentImageView.image = results.scannedImage
+        
         scanner.dismiss(animated: true)
+    }
+    
+    func loadImage(name: String) {
+        //declare where the image is stored
+        let imageName = name // your image name here
+        let imagePath: String = "\(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0])/\(imageName).png"
+        let imageUrl: URL = URL(fileURLWithPath: imagePath)
+        
+        //load the image
+        guard FileManager.default.fileExists(atPath: imagePath),
+            let imageData: Data = try? Data(contentsOf: imageUrl),//scale: allows for proper image scaling for non-retina devices
+            let image: UIImage = UIImage(data: imageData, scale: UIScreen.main.scale) else {
+                return // No image found!
+        }
+        
+        //This line allows for proper scaling for non retina devices
+        //image = UIImage(data: imageData, scale: UIScreen.main.scale)
+        
+        //set document image
+        documentImageView.image = image
     }
     
     func imageScannerControllerDidCancel(_ scanner: ImageScannerController) {
