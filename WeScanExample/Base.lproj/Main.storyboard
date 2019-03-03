@@ -19,15 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qdR-PQ-40a">
-                                <rect key="frame" x="162" y="398" width="700" height="700"/>
+                                <rect key="frame" x="162" y="126" width="700" height="1114"/>
                                 <color key="backgroundColor" red="0.13725490200000001" green="0.31372549020000001" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="700" id="CfV-0L-7qp"/>
-                                    <constraint firstAttribute="height" constant="700" id="eZg-ey-T9G"/>
-                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcd-7l-5jc">
-                                <rect key="frame" x="385" y="177" width="259" height="48"/>
+                                <rect key="frame" x="382.5" y="19" width="259" height="48"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <state key="normal" title="SCAN DOCUMENT">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -39,14 +35,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qdR-PQ-40a" firstAttribute="top" secondItem="hcd-7l-5jc" secondAttribute="bottom" constant="173" id="50Q-ZA-mZT"/>
-                            <constraint firstItem="hcd-7l-5jc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="157" id="Chh-vY-Vqu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qdR-PQ-40a" secondAttribute="trailing" constant="162" id="CuM-jF-V2E"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qdR-PQ-40a" secondAttribute="bottom" constant="268" id="WEt-uS-KF7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hcd-7l-5jc" secondAttribute="trailing" constant="380" id="bi7-vk-1Qo"/>
-                            <constraint firstItem="qdR-PQ-40a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="162" id="eye-eS-DVY"/>
-                            <constraint firstItem="qdR-PQ-40a" firstAttribute="top" secondItem="hcd-7l-5jc" secondAttribute="bottom" constant="173" id="fo5-Dj-cQB"/>
-                            <constraint firstItem="hcd-7l-5jc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="385" id="vg1-K9-Jb6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qdR-PQ-40a" secondAttribute="bottom" constant="126" id="0E9-eI-3Mt"/>
+                            <constraint firstItem="qdR-PQ-40a" firstAttribute="centerX" secondItem="hcd-7l-5jc" secondAttribute="centerX" id="G9c-5E-AuR"/>
+                            <constraint firstItem="qdR-PQ-40a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JXG-6F-MtT"/>
+                            <constraint firstItem="qdR-PQ-40a" firstAttribute="top" secondItem="hcd-7l-5jc" secondAttribute="bottom" constant="59" id="QrT-AN-Qo2"/>
+                            <constraint firstItem="qdR-PQ-40a" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UjD-0e-2bw"/>
+                            <constraint firstItem="qdR-PQ-40a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="162" id="bDD-1q-dWx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -56,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-78.515625" y="133.96778916544656"/>
+            <point key="canvasLocation" x="-79.1015625" y="133.52855051244509"/>
         </scene>
     </scenes>
 </document>
